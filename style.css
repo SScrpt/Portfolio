@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+body {
+    background-color: #f0eeee;
+}
+
+img {
+    width: 100%;
+}
+
+.linkedin {
+    width: clamp(20px, 3vw, 30px);
+    margin-bottom: 30px;
+}
+
+.nombre {
+    color: white;
+    font-size: clamp(20px, 3vw, 30px);
+}
+.prof {
+    color: white;
+    font-size: clamp(25px, 4vw, 40px);
+    font-weight: bold;
+    text-align: center;
+}
+
+.icono {
+    font-size: 150px;
+    color: white;
+    text-shadow: 2px 2px 4px white;
+}
+
+.contenedor-cabecera {
+    background-color: black;
+    height: 500px;
+    box-shadow: 0px 20px 40px rgb(12, 11, 11);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.contenedor-proyectos > .proyectos {
+    padding: 0;
+    display: block;
+    margin: auto;
+    margin-top: -120px;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 1300px;
+}
+
+.contenedor-proyectos > .proyectos > .proyecto { 
+    display: inline-block;
+    width: 380px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 3px 3px 6px black;
+    border-radius: 3px;
+    margin: 3px;
+}
+
+@media (min-width: 500px) {
+    .proyecto { margin-top: 0px; margin: 10px }
+}
+
+.imagen {
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+}
+
+#HTMLCSSJS {
+    background-image: url(imagenes/html-css-js.png);
+}
+#VITEREACT {
+    background-image: url(imagenes/vite-react.png);
+}
+#WORDPRESS {
+    background-image: url(imagenes/wordpress.jpg);
+}
+
+.titulo {
+    font-size: 25px;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.descripcion {
+    height: 160px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vinculo {
+    padding: 10px;
+}
+
+.vinculo > a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: #381232;
+}
+
+a > .icono {
+    font-size: 30px;
+    color: #381232;
+}
+
+.vinculo > a:hover {
+    opacity: 0.7;
+}
+
+.fecha {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
